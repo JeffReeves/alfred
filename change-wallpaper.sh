@@ -6,6 +6,11 @@
 # file to store list of random wallpapers
 WALLPAPERS_FILE='/tmp/wallpapers.txt'
 
+# set a default user for cron (based on UID 1000)
+if [ -z "${USER}" ]; then
+    export USER=$(id -un 1000)
+fi
+
 
 # functions
 function generate_wallpapers_list(){

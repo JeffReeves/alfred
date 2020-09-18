@@ -14,7 +14,7 @@ Place any desired wallpapers in the `~/Pictures/wallpapers` directory.
 
 Run the `crontab -e` command and add the following value:
 ```sh
-*/5 * * * *  ~/alfred/change-wallpaper.sh >> /tmp/change-wallpaper.log 2>&1
+*/5 * * * * export USER=${USER}; ${HOME}/alfred/change-wallpaper.sh >> /tmp/change-wallpaper.log 2>&1
 ```
 
 This will result in the wallpaper changing every five minutes.

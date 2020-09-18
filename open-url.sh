@@ -9,6 +9,11 @@ if [ -z ${1} ]; then
    exit 1
 fi
 
+# set display
+if [ -z "${DISPLAY}" ]; then
+    export DISPLAY=':0.0'
+fi
+
 # set URL
 URL="${1}"
 

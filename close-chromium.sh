@@ -3,6 +3,10 @@
 #   Google Chrome
 # author: Jeff Reeves
 
+# TODO:
+# - rename to close-browser.sh
+# - use wmctrl or another utility to close any browser
+
 # verify wmctrl is installed
 WMCTRL_PRESENT=$(which wmctrl)
 if [ -z "${WMCTRL_PRESENT}" ]; then

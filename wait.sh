@@ -13,7 +13,7 @@ fi
 WAIT_SECONDS=$(($WAIT_MINUTES*60))
 WAIT_DATE=$(date --date="${WAIT_SECONDS} seconds")
 #echo "[INFO] Current Date and Time: $(date)"
-echo "[INFO] Waiting ${SLEEP_MINUTES} minutes:"
+echo "[INFO] Waiting ${WAIT_MINUTES} minutes:"
 echo "    ${WAIT_DATE}"
 echo "[HELP] To cancel: press Ctrl+C or simply close this window."
 

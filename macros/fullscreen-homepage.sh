@@ -12,8 +12,9 @@ else
     echo "[INFO] Window ID: ${WINDOW_ID}"
 fi
 
-# activate window and send F11 key
+# activate window, send F5 key to refresh, and then send F11 key to fullscreen
 echo "[TASK] Activating window and sending F11 key ..."
 echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && xdotool key F11"
+xdotool windowactivate ${WINDOW_ID} && xdotool key F5
 xdotool windowactivate ${WINDOW_ID} && xdotool key F11
 

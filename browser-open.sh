@@ -23,13 +23,13 @@ echo "${URL}"
 
 # open the URL
 echo "[TASK] Opening URL in the default browser ..."
-echo "[COMMAND] xdg-open \"${URL}\" || \
+echo "[COMMAND] x-www-browser \"${URL}\" || \
+gnome-open \"${URL}\" || \
 sensible-browser \"${URL}\" || \
-x-www-browser \"${URL}\" || \
-gnome-open \"${URL}\""
+xdg-open \"${URL}\""
 
 # run commands
-xdg-open "${URL}" || \
-sensible-browser "${URL}" || \
 x-www-browser "${URL}" || \
-gnome-open "${URL}"
+gnome-open "${URL}" || \
+sensible-browser "${URL}" || \
+xdg-open "${URL}"

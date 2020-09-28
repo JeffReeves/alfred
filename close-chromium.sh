@@ -19,8 +19,8 @@ fi
 # close chrome gracefully
 echo "[TASK] Closing Chromium/Chrome gracefully..."
 echo "[COMMAND] wmctrl -c \"- Chromium\""
-echo "[COMMAND] wmctrl -c \"- Chrome\""
+echo "[COMMAND] wmctrl -c \"- Google Chrome\""
 echo "[COMMAND] wmctrl -c \"Google Hangouts\""
 wmctrl -c "- Chromium"
-wmctrl -c "- Chrome"
+wmctrl -c "- Google Chrome"
 wmctrl -c "Google Hangouts"

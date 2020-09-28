@@ -1,16 +1,18 @@
 #!/bin/bash
-# purpose: activates a Chrome/Chromium window and presses F11 to fullscreen it
+# purpose: activates a Chrome/Chromium/Firefox window and 
+#   presses F11 to fullscreen it
+# author: Jeff Reeves
 
 # if window title parameter was not passed, prompt for valid input
 if [ -z ${1} ]; then
-    read -p "[PROMPT] Enter a full or partial Chrome/Chromium window's title " WINDOW_TITLE
+    read -p "[PROMPT] Enter a full or partial browser window's title " WINDOW_TITLE
 else
     WINDOW_TITLE=${1}
 fi
 
 # get window ID
 echo "[TASK] Getting Window ID for title '${WINDOW_TITLE}' ..."
-WINDOW_ID=$(xdotool search --name ".*${WINDOW_TITLE}.*- (Google Chrome|Chromium)"| head -n1)
+WINDOW_ID=$(xdotool search --name ".*${WINDOW_TITLE}.*- (Google Chrome|Chromium|Mozilla Firefox)"| head -n1)
 
 # verify window ID was acquired
 if [ -z ${WINDOW_ID} ]; then

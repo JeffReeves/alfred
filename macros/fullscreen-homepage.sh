@@ -3,7 +3,7 @@
 
 # get window ID
 echo "[TASK] Getting Window ID for title 'Homepage' ..."
-WINDOW_ID=$(xdotool search --name 'Homepage')
+WINDOW_ID=$(xdotool search --name 'Homepage - (Google Chrome|Chromium)' | head -n1)
 
 # verify window ID was acquired
 if [ -z ${WINDOW_ID} ]; then

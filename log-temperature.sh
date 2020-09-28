@@ -1,5 +1,5 @@
 #!/bin/bash
-# purpose: display and log temperature with CPU load averages
+# purpose: display and log temperature with CPU load averages on Raspberry Pi 4
 # author: Jeff Reeves
 
 # TODO:

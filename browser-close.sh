@@ -7,7 +7,7 @@
 # author: Jeff Reeves
 
 # close chrome gracefully
-echo "[TASK] Closing Chromium/Chrome gracefully..."
+echo "[TASK] Closing Chromium/Chrome/Firefox gracefully..."
 echo "[COMMAND] wmctrl -c \"- Chromium\""
 echo "[COMMAND] wmctrl -c \"- Google Chrome\""
 echo "[COMMAND] wmctrl -c \"- Mozilla Firefox\""

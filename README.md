@@ -25,7 +25,7 @@ Place any desired wallpapers in the `~/Pictures/wallpapers` directory.
 Run the `crontab -e` command and add the following value:
 
 ```sh
-*/5 * * * * export USER=${USER}; ${HOME}/alfred/change-wallpaper.sh >> /tmp/change-wallpaper.log 2>&1
+*/15 * * * * export USER=${USER}; ${HOME}/alfred/wallpaper-change.sh >> /tmp/wallpaper-change.log 2>&1
 ```
 
 This will result in the wallpaper changing every five minutes.
@@ -37,11 +37,11 @@ Edit this script to load any URL desired.
 Run the `crontab -e` command and add the following:
 
 ```sh
-30 6 * * * ${HOME}/alfred/macros/morning-alarm.sh
+30 6 * * 1-5 ${HOME}/alfred/macros/morning-alarm.sh
 ```
 
 This will result in waking the screen and opening a URL in the 
-default browser at 6:30 AM every day.
+default browser at 6:30 AM, Monday through Friday.
 
 
 ## License

@@ -1,3 +1,10 @@
+#!/bin/bash
+# purpose: installs prerequisites to use other scripts
+# author: Jeff Reeves
+
+# TODO:
+# - convert install to function with command passed as a parameter
+
 # verify xdotool is installed
 echo "[TASK] Verifing xdotool is installed ..."
 XDOTOOL_PRESENT=$(which xdotool)
@@ -23,3 +30,16 @@ else
     echo "[SUCCESS] wmctrl is already installed:"
     echo "${WMCTRL_PRESENT}"
 fi
+
+# # verify pcmanfm is installed
+# echo "[TASK] Verifing pcmanfm is installed ..."
+# PCMANFM_PRESENT=$(which pcmanfm)
+# if [ -z "${PCMANFM_PRESENT}" ]; then
+#     echo "[WARNING] pcmanfm command is not present"
+#     echo "[TASK] Installing pcmanfm..."
+#     echo "[COMMAND] sudo apt-get install pcmanfm -y"
+#     sudo apt-get install pcmanfm -y
+# else
+#     echo "[SUCCESS] pcmanfm is already installed:"
+#     echo "${PCMANFM_PRESENT}"
+# fi

@@ -14,14 +14,14 @@ fi
 # wait for number of minutes
 ~/alfred/wait.sh ${MINUTES_TO_WAIT}
 
-# close chromium
-~/alfred/close-chromium.sh
+# close chromium/chrome/firefox
+~/alfred/browser-close.sh
 
 # wait 5 seconds to ensure chromium is closed
 sleep 5
 
 # open the homepage URL for the night clock
-~/alfred/open-url.sh 'file:///home/jeff/homepage/index.html'
+~/alfred/browser-open.sh 'file:///home/jeff/homepage/index.html'
 
 # wait 5 seconds to ensure the page is open
 sleep 5

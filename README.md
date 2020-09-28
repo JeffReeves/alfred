@@ -11,10 +11,10 @@ Named in homage of the loyal and tireless butler, best friend, aide-de-camp, and
 
 ### Install Prerequisites
 
-Run the `install-required-commands.sh` script:
+Run the `install-prerequisites.sh` script:
 
 ```sh
-~/alfred/install-required-commands.sh
+~/alfred/install-prerequisites.sh
 ```
 
 

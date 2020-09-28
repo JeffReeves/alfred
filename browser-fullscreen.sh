@@ -4,10 +4,10 @@
 # author: Jeff Reeves
 
 # if window search parameter was not passed, prompt for valid input
-if [ -z ${1} ]; then
+if [ -z "${1}" ]; then
     read -p "[PROMPT] Enter a full or partial browser window's title " WINDOW_SEARCH
 else
-    WINDOW_SEARCH=${1}
+    WINDOW_SEARCH="${1}"
 fi
 
 # get window ID
@@ -27,7 +27,7 @@ echo "[TASK] Getting the full Window Title from Window ID ..."
 WINDOW_TITLE=$(xdotool getwindowname ${WINDOW_ID})
 
 # verify Window Title was acquired
-if [ -z ${WINDOW_TITLE} ]; then
+if [ -z "${WINDOW_TITLE}" ]; then
     echo "[ERROR] Unable to acquire Window Title for '${WINDOW_ID}'"
     exit 1
 else
@@ -41,7 +41,7 @@ xdotool windowactivate ${WINDOW_ID} && xdotool key F11
 sleep 3
 
 # if a YouTube video, fullscreen it
-if [[ ${WINDOW_TITLE} =~ '- YouTube -' ]]; then
+if [[ "${WINDOW_TITLE}" =~ '- YouTube -' ]]; then
     echo "[TASK] Activating YouTube video window and sending f key ..."
     echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && xdotool key f"
     xdotool windowactivate ${WINDOW_ID} && xdotool key f

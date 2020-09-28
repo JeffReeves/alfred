@@ -9,6 +9,15 @@ Named in homage of the loyal and tireless butler, best friend, aide-de-camp, and
 
 ## How To Use
 
+### Install Prerequisites
+
+Run the `install-required-commands.sh` script:
+
+```sh
+~/alfred/install-required-commands.sh
+```
+
+
 ### Change Wallpapers via Cron
 
 Place any desired wallpapers in the `~/Pictures/wallpapers` directory.

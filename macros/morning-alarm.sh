@@ -13,3 +13,9 @@ ${HOME}/alfred/screen-wake.sh
 # TODO:
 # - add array and load one from random
 ${HOME}/alfred/browser-open.sh 'https://www.youtube.com/watch?v=IvjMgVS6kng&t=1'
+
+# wait 10 seconds for browser and video to fully load
+sleep 10
+
+# fullscreen the browser and YouTube video
+${HOME}/alfred/browser-fullscreen.sh 'Relaxing River Sounds - Peaceful Forest River'

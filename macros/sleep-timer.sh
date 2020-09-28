@@ -27,4 +27,4 @@ sleep 5
 sleep 5
 
 # send F11 to fullscreen the homepage
-~/alfred/fullscreen-browser.sh 'Homepage'
+~/alfred/browser-fullscreen.sh 'Homepage'

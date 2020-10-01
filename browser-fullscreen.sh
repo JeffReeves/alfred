@@ -36,13 +36,13 @@ fi
 
 # activate window, then send F11 key to fullscreen
 echo "[TASK] Activating window and sending F11 key ..."
-echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && xdotool key F11"
-xdotool windowactivate ${WINDOW_ID} && xdotool key F11
+echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && sleep 2 && xdotool key F11"
+xdotool windowactivate ${WINDOW_ID} && sleep 2 && xdotool key F11
 sleep 3
 
 # if a YouTube video, fullscreen it
 if [[ "${WINDOW_TITLE}" =~ '- YouTube -' ]]; then
     echo "[TASK] Activating YouTube video window and sending f key ..."
-    echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && xdotool key f"
-    xdotool windowactivate ${WINDOW_ID} && xdotool key f
+    echo "[COMMAND] xdotool windowactivate ${WINDOW_ID} && sleep 2 && xdotool key f"
+    xdotool windowactivate ${WINDOW_ID} && sleep 2 && xdotool key f
 fi

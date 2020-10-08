@@ -18,4 +18,7 @@ ${HOME}/alfred/browser-open.sh 'https://www.youtube.com/watch?v=IvjMgVS6kng&t=1'
 sleep 10
 
 # fullscreen the browser and YouTube video
-${HOME}/alfred/browser-fullscreen.sh 'Relaxing River Sounds - Peaceful Forest River'
+#${HOME}/alfred/browser-fullscreen.sh 'Relaxing River Sounds - Peaceful Forest River'
+
+# switch to home page tab on first tab
+${HOME}/alfred/browser-tab-select.sh '1'

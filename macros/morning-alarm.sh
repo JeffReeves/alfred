@@ -6,6 +6,11 @@
 # - create a homepage to load helpful information when waking:
 #   examples: weather, date, reminders, nice messages
 
+# set display
+if [ -z "${DISPLAY}" ]; then
+    export DISPLAY=':0.0'
+fi
+
 # wake the screen
 ${HOME}/alfred/screen-wake.sh
 

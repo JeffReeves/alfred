@@ -1,5 +1,5 @@
 #!/bin/bash
-# purpose: closes chrome and opens night clock
+# purpose: closes chrome or firefox browsers after waiting minutes
 # author: Jeff Reeves
 
 # get number of minutes to wait from the first parameter
@@ -19,12 +19,3 @@ fi
 
 # wait 5 seconds to ensure chromium is closed
 sleep 5
-
-# open the homepage URL for the night clock
-~/alfred/browser-open.sh 'file:///home/jeff/homepage/index.html'
-
-# wait 5 seconds to ensure the page is open
-sleep 5
-
-# send F11 to fullscreen the homepage
-~/alfred/browser-fullscreen.sh 'Homepage'

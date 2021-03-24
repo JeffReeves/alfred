@@ -1,5 +1,6 @@
 #!/bin/bash
 # purpose: close any open running instances of:
+#   - Microsoft Edge
 #   - Chromium
 #   - Google Chrome
 #   - Firefox
@@ -8,10 +9,12 @@
 
 # close chrome gracefully
 echo "[TASK] Closing Chromium/Chrome/Firefox gracefully..."
+echo "[COMMAND] wmctrl -c \"- Microsoft​ Edge\""
 echo "[COMMAND] wmctrl -c \"- Chromium\""
 echo "[COMMAND] wmctrl -c \"- Google Chrome\""
 echo "[COMMAND] wmctrl -c \"- Mozilla Firefox\""
 echo "[COMMAND] wmctrl -c \"Google Hangouts\""
+wmctrl -c "- Microsoft​ Edge" || \
 wmctrl -c "- Chromium" || \
 wmctrl -c "- Google Chrome" || \
 wmctrl -c "- Mozilla Firefox" || \

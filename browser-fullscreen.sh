@@ -10,10 +10,10 @@ else
     WINDOW_SEARCH="${1}"
 fi
 
-# get window ID
+# get window ID 
 echo "[TASK] Getting Window ID for title '${WINDOW_SEARCH}' ..."
-echo "[COMMAND] xdotool search --name \".*${WINDOW_SEARCH}.*- (Google Chrome|Chromium|Mozilla Firefox)\"| head -n1"
-WINDOW_ID=$(xdotool search --name ".*${WINDOW_SEARCH}.*- (Google Chrome|Chromium|Mozilla Firefox)"| head -n1)
+echo "[COMMAND] xdotool search --name \".*${WINDOW_SEARCH}.*- (Microsoft​ Edge|Google Chrome|Chromium|Mozilla Firefox).*\"| head -n1"
+WINDOW_ID=$(xdotool search --name ".*${WINDOW_SEARCH}.*- (Microsoft​ Edge|Google Chrome|Chromium|Mozilla Firefox).*"| head -n1)
 
 # verify window ID was acquired
 if [ -z ${WINDOW_ID} ]; then
